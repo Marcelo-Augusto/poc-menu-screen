@@ -1,4 +1,4 @@
-package com.marceloaugusto.pocmenuscreen.listscreen
+package com.marceloaugusto.pocmenuscreen.compose
 
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.material.DrawerState
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun onProductsScroll(
-    data: ListScreenData,
+    data: MenuScreenData,
     listStateProducts: LazyListState,
     listStateCategories: LazyListState,
     callback: (categorySelected: Int) -> Unit

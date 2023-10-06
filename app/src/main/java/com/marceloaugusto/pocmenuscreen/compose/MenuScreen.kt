@@ -1,4 +1,4 @@
-package com.marceloaugusto.pocmenuscreen.listscreen
+package com.marceloaugusto.pocmenuscreen.compose
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -37,8 +37,8 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ListScreen(
-    data: ListScreenData = getListScreenData()
+fun MenuScreen(
+    data: MenuScreenData = getListScreenData()
 ) {
     val scaffoldState = rememberScaffoldState()
     val closeDrawer = triggerCloseDrawer(drawerState = scaffoldState.drawerState)
@@ -144,7 +144,7 @@ fun DrawerContent(
 @Composable
 fun CategoryListAndProductList(
     modifier: Modifier = Modifier,
-    data: ListScreenData,
+    data: MenuScreenData,
     onAddButtonPressed: () -> Unit
 ) {
     Row(
@@ -218,5 +218,5 @@ fun CategoryListAndProductList(
 )
 @Composable
 private fun Preview() {
-    ListScreen()
+    MenuScreen()
 }

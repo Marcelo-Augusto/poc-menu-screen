@@ -1,6 +1,6 @@
-package com.marceloaugusto.pocmenuscreen.listscreen
+package com.marceloaugusto.pocmenuscreen.compose
 
-data class ListScreenData(
+data class MenuScreenData(
     val categories: List<CategoryData>,
     val products: List<ProductData>
 )
@@ -27,9 +27,9 @@ data class ProductItem(
     val price: String
 )
 
-fun getListScreenData(): ListScreenData {
+fun getListScreenData(): MenuScreenData {
     val categories = getCategoriesList()
-    return ListScreenData(categories, getProductList(categories))
+    return MenuScreenData(categories, getProductList(categories))
 }
 
 private fun getCategoriesList() = mutableListOf<CategoryData>().apply {

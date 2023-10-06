@@ -1,4 +1,4 @@
-package com.marceloaugusto.pocmenuscreen.listscreen
+package com.marceloaugusto.pocmenuscreen.compose
 
 data class ProductPopupData(
     val options: List<OptionData>,

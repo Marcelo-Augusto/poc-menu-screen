@@ -1,4 +1,4 @@
-package com.marceloaugusto.pocmenuscreen.listscreen
+package com.marceloaugusto.pocmenuscreen.compose
 
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
